@@ -1,0 +1,31 @@
+{
+  "name": "cypresscucumbertutorial",
+  "version": "1.0.0",
+  "description": "TutorielCypressWithCucumber",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexanderValeriano/CypressCucumberTutorial.git"
+  },
+  "keywords": [
+    "Cucumber",
+    "Cypress"
+  ],
+  "author": "Alexander VALERIANO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexanderValeriano/CypressCucumberTutorial/issues"
+  },
+  "homepage": "https://github.com/AlexanderValeriano/CypressCucumberTutorial#readme",
+  "devDependencies": {
+    "cypress": "^13.6.4",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "step_definitions": "cypress/e2e/login"
+  }
+}
